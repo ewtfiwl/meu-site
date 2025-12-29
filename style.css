@@ -1,9 +1,13 @@
+h1 {
+  color: #fff;
+}
+
 body {
   margin: 0;
   padding: 0;
-  background-color: #0f0f0f;
-  color: #f0f0f0;
-  font-family: "Segoe UI", sans-serif;
+  background-color: #111;
+  color: #b2b2b2; /* tom sobre tom */
+  font-family: "Arial";
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,8 +27,8 @@ section {
 }
 
 .foto {
-  width: 150px;
-  height: 150px;
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 20px;
@@ -39,7 +43,7 @@ h1 {
 .subtitulo {
   font-size: 16px;
   margin-bottom: 20px;
-  color: #ccc;
+  color: #fff;
 }
 
 h2 {
@@ -74,7 +78,7 @@ h2 {
 
 .habilidades li {
   margin: 8px 0;
-  color: #ddd;
+  color: #b2b2b2;
 }
 .contato a {
   display: inline-block;
@@ -82,8 +86,23 @@ h2 {
   color: #00ffcc;
   text-decoration: none;
   font-weight: bold;
+  transition: transform 0.2s ease, color 0.2s ease;
 }
 
 .contato a:hover {
-  text-decoration: underline;
+  transform: translateY(-3px);
+  color: #00ffcc;
+}
+.projeto-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  border: none;
+  box-shadow: 0 8px 20px rgba(0, 255, 204, 0.08);
+}
+.destaque {
+  color: #00ffcc;
+}
+.titulo-projeto {
+  color: #fff;
 }
