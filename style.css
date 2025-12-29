@@ -9,17 +9,23 @@ body {
   align-items: center;
   min-height: 100vh;
 }
+section {
+  background: #161616;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 25px 0;
+}
 
 .conteudo {
   text-align: center;
-  padding: 30px;
+  padding: 40px 30px;
   max-width: 600px;
 }
 
 .foto {
   width: 150px;
   height: 150px;
-  border-radius: 600px;
+  border-radius: 50%;
   object-fit: cover;
   margin-bottom: 20px;
   border: 3px solid #00ffcc;
@@ -36,18 +42,48 @@ h1 {
   color: #ccc;
 }
 
-.botao {
-  display: inline-block;
-  margin-top: 30px;
-  background-color: #00ffcc;
-  color: #000;
-  padding: 12px 25px;
-  border-radius: 25px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: background 0.3s ease;
+h2 {
+  margin-bottom: 15px;
+  font-size: 22px;
+  color: #00ffcc;
+}
+.projeto-card {
+  background: #1c1c1c;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  text-align: left;
 }
 
-.botao:hover {
-  background-color: #00ddb3;
+.projeto-card a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #00ffcc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.projeto-card a:hover {
+  transform: translateY(-3px);
+  transition: transform 0.2s ease;
+}
+.habilidades ul {
+  list-style: none;
+  padding: 0;
+}
+
+.habilidades li {
+  margin: 8px 0;
+  color: #ddd;
+}
+.contato a {
+  display: inline-block;
+  margin: 5px 10px;
+  color: #00ffcc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contato a:hover {
+  text-decoration: underline;
 }
