@@ -106,3 +106,30 @@ h2 {
 .titulo-projeto {
   color: #fff;
 }
+@media (max-width: 600px) {
+  body {
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .conteudo {
+    padding: 30px 20px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .foto {
+    width: 140px;
+    height: 140px;
+  }
+
+  .projeto-card {
+    text-align: center;
+  }
+}
