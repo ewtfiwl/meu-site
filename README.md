@@ -1,26 +1,39 @@
 # 🌐 Site Pessoal — Enzo Lemos
 
-Este é meu site pessoal, criado para apresentar quem eu sou, minhas habilidades e alguns projetos que desenvolvi durante meus estudos em Front-End.
+Este é meu site pessoal, criado para apresentar quem eu sou, minhas habilidades e alguns projetos que desenvolvi durante meus estudos em **Front-End**.
 
-O objetivo do projeto é praticar **HTML semântico**, **CSS moderno** e organização de código, além de servir como base para meu portfólio.
+O objetivo do projeto é praticar **HTML semântico**, **CSS moderno**, **JavaScript básico** e organização de código, além de servir como base para meu portfólio online.
 
 ---
 
 ## 🚀 Tecnologias utilizadas
 
-- HTML5 (estrutura semântica)
-- CSS3 (Box Model, Flexbox, layout responsivo)
-- Git e GitHub
-- GitHub Pages
+- **HTML5** (estrutura semântica, headings, sections, links, imagens)
+- **CSS3** (Box Model, Flexbox, Grid, layout responsivo, animações, hover effects, transições)
+- **JavaScript** (Intersection Observer para animações de scroll)
+- **Git & GitHub** (controle de versão e publicação)
+- **GitHub Pages** (hospedagem gratuita do site)
 
 ---
 
 ## 📂 Seções do site
 
-- **Sobre mim**
-- **Habilidades**
-- **Projetos**
-- **Contato**
+- **Landing Page / Hero** — apresentação com foto, nome e descrição
+- **Sobre mim** — breve descrição sobre minha trajetória e interesses
+- **Habilidades** — lista de conhecimentos em Front-End
+- **Projetos** — cards com imagens, títulos, descrição e links para GitHub
+- **Contato** — links para email, LinkedIn e GitHub
+
+---
+
+## 🖥️ Funcionalidades implementadas
+
+- Animação de entrada de elementos ao scroll (fade + slide)
+- Hover effects com glow nas imagens dos projetos
+- Responsividade para mobile, incluindo ajustes de padding, fonte e tamanho de imagens
+- Alternância de cores suaves entre cards de projetos
+- Selo fixo no canto inferior direito com meu nome (marca d’água / identificação)
+- Uso de pseudo-elementos (`::before`) para overlay na landing page
 
 ---
 
@@ -32,12 +45,11 @@ O objetivo do projeto é praticar **HTML semântico**, **CSS moderno** e organiz
 
 ## 📌 Próximos passos
 
-- Melhorar responsividade
-- Adicionar JavaScript
-- Criar novos projetos para o portfólio
+- Adicionar mais projetos ao portfólio
+- Incrementar interatividade com JavaScript (modal de projetos, filtros, etc.)
+- Melhorar otimização e performance (preload de imagens, lazy loading)
+- Explorar efeitos avançados de CSS e animações
 
 ---
 
 💻 Desenvolvido por **Enzo Lemos**
-
----
