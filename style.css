@@ -84,9 +84,10 @@ body {
 /* LANDING PAGE */
 .hero {
   min-height: 100vh;
-  background-image: url("bg-landing-webp.webp");
-  background-size: cover;
-  background-position: center;
+  background-image: url("bg-landing.webp");
+  background-size: cover; /*cobre toda a tela*/
+  background-position: bottom; /*garante que a parte inferior fique visível*/
+  background-repeat: no-repeat;
   position: relative;
   display: flex;
   justify-content: center;
@@ -98,7 +99,14 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.65);
+  /*Escuro no topo e transparente no final da imagem*/
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.7) 0%,
+    /*topo escuro*/ rgba(0, 0, 0, 0.3) 85%,
+    /*começa a clarear*/ rgba(0, 0, 0, 0) 100% /*transparente no fim*/
+  );
+  z-index: 0;
 }
 
 .hero .conteudo {
