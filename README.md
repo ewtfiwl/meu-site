@@ -34,7 +34,7 @@ O objetivo do projeto é praticar **HTML semântico**, **CSS moderno**, **JavaSc
 - Alternância de cores suaves entre cards de projetos
 - Selo fixo no canto inferior direito com meu nome (marca d’água / identificação)
 - Uso de pseudo-elementos (`::before`) para overlay na landing page
-- - Implementação de favicon responsivo utilizando SVG e PNG, garantindo compatibilidade entre navegadores modernos, legacy e dispositivos Apple
+- Implementação de favicon responsivo utilizando SVG e PNG, garantindo compatibilidade entre navegadores modernos, legacy e dispositivos Apple
 
 ---
 
