@@ -1,4 +1,4 @@
-# 🌐 Site Pessoal — Enzo Lemos
+# 🌐 Site Pessoal — Enzo Lemos | Portfólio Front-End
 
 Este é meu site pessoal, criado para apresentar quem eu sou, minhas habilidades e alguns projetos que desenvolvi durante meus estudos em **Front-End**.
 
@@ -34,6 +34,17 @@ O objetivo do projeto é praticar **HTML semântico**, **CSS moderno**, **JavaSc
 - Alternância de cores suaves entre cards de projetos
 - Selo fixo no canto inferior direito com meu nome (marca d’água / identificação)
 - Uso de pseudo-elementos (`::before`) para overlay na landing page
+- - Implementação de favicon responsivo utilizando SVG e PNG, garantindo compatibilidade entre navegadores modernos, legacy e dispositivos Apple
+
+---
+
+## 📘 Principais aprendizados
+
+- Estruturação de páginas com HTML semântico
+- Organização de CSS escalável e reutilizável
+- Uso prático de animações e transições sem prejudicar performance
+- Aplicação de JavaScript para melhorar experiência do usuário
+- Publicação e versionamento de projetos com GitHub Pages
 
 ---
 
