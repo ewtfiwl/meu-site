@@ -8,21 +8,31 @@ O objetivo do projeto é praticar **HTML semântico**, **CSS moderno**, **JavaSc
 
 ## 🚀 Tecnologias utilizadas
 
-- **HTML5** (estrutura semântica, headings, sections, links, imagens)
-- **CSS3** (Box Model, Flexbox, Grid, layout responsivo, animações, hover effects, transições)
-- **JavaScript** (Intersection Observer para animações de scroll)
-- **Git & GitHub** (controle de versão e publicação)
-- **GitHub Pages** (hospedagem gratuita do site)
+- **HTML5** — Estrutura semântica, headings, sections, links, imagens
+- **CSS3** — Box Model, Flexbox, Grid, responsividade, transições e animações
+- **JavaScript** — Intersection Observer para animações de scroll
+- **Git & GitHub** — Controle de versão e publicação
+- **GitHub Pages** — Hospedagem gratuita do site
 
 ---
 
 ## 📂 Seções do site
 
-- **Landing Page / Hero** — apresentação com foto, nome e descrição
-- **Sobre mim** — breve descrição sobre minha trajetória e interesses
-- **Habilidades** — lista de conhecimentos em Front-End
-- **Projetos** — cards com imagens, títulos, descrição e links para GitHub
-- **Contato** — links para email, LinkedIn e GitHub
+- **Landing Page / Hero** — Apresentação com foto, nome e descrição
+- **Sobre mim** — Breve descrição sobre minha trajetória e interesses
+- **Habilidades** — Lista de conhecimentos em Front-End
+- **Projetos** — Cards com imagens, títulos, descrição e links para projetos reais
+- **Contato** — Links para email, LinkedIn e GitHub
+
+---
+
+## 📌 Projetos em destaque
+
+- **Bikcraft** — Landing page institucional de uma loja de bicicletas artesanais, construída em HTML e CSS. Prática de layout em Grid, responsividade, estilização de menus, cards e botões.  
+  [Ver site](https://ewtfiwl.github.io/Bikcraft/) | [Ver código no GitHub](https://github.com/ewtfiwl/Bikcraft)
+
+- **Site Pessoal** — Meu portfólio, criado para praticar estruturação, organização visual e publicação com GitHub Pages.  
+  [Ver site](https://ewtfiwl.github.io/meu-site/) | [Ver código no GitHub](https://github.com/ewtfiwl/meu-site/)
 
 ---
 
@@ -32,9 +42,9 @@ O objetivo do projeto é praticar **HTML semântico**, **CSS moderno**, **JavaSc
 - Hover effects com glow nas imagens dos projetos
 - Responsividade para mobile, incluindo ajustes de padding, fonte e tamanho de imagens
 - Alternância de cores suaves entre cards de projetos
-- Selo fixo no canto inferior direito com meu nome (marca d’água / identificação)
+- Selo fixo no canto inferior direito com meu nome
 - Uso de pseudo-elementos (`::before`) para overlay na landing page
-- Implementação de favicon responsivo utilizando SVG e PNG, garantindo compatibilidade entre navegadores modernos, legacy e dispositivos Apple
+- Implementação de favicon responsivo (SVG e PNG) para compatibilidade entre navegadores e dispositivos Apple
 
 ---
 
@@ -48,16 +58,10 @@ O objetivo do projeto é praticar **HTML semântico**, **CSS moderno**, **JavaSc
 
 ---
 
-## 🔗 Acesse o site
-
-👉 [Clique aqui para ver online](https://ewtfiwl.github.io/meu-site/)
-
----
-
-## 📌 Próximos passos
+## 🚀 Próximos passos
 
 - Adicionar mais projetos ao portfólio
-- Incrementar interatividade com JavaScript (modal de projetos, filtros, etc.)
+- Incrementar interatividade com JavaScript (modais de projetos, filtros, etc.)
 - Melhorar otimização e performance (preload de imagens, lazy loading)
 - Explorar efeitos avançados de CSS e animações
 
