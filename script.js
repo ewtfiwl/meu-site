@@ -35,3 +35,27 @@ elementos.forEach((el) => observer.observe(el));
 document
   .querySelectorAll(".hero .conteudo, .foto")
   .forEach((el) => el.classList.add("ativo"));
+
+// =========================
+// TOUCH NO MOBILE PARA PROJETOS
+// =========================
+
+// Seleciona todas as imagens dos projetos
+const projetoImgs = document.querySelectorAll(".projeto-card img");
+
+projetoImgs.forEach((img) => {
+  // Quando toca na imagem
+  img.addEventListener("touchstart", () => {
+    // Remove a classe 'ativo' de todas
+    projetoImgs.forEach((i) => i.classList.remove("ativo"));
+    // Adiciona a classe 'ativo' na imagem tocada
+    img.classList.add("ativo");
+  });
+
+  // Quando solta o dedo (opcional, para efeito temporário)
+  img.addEventListener("touchend", () => {
+    setTimeout(() => {
+      img.classList.remove("ativo");
+    }, 300); // 0.3s igual ao cooldown do efeito
+  });
+});
