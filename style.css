@@ -216,6 +216,12 @@ h2 {
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
+/* Sombrinha ao tocar no mobile */
+.projeto-card img:active {
+  box-shadow: 0 0 25px rgba(0, 255, 204, 0.45), 0 0 50px rgba(0, 255, 204, 0.15);
+  transform: translateY(-4px);
+}
+
 .projeto-card:hover {
   box-shadow: 0 0 25px rgba(0, 255, 204, 0.45), 0 0 50px rgba(0, 255, 204, 0.15);
   transform: translateY(-4px);
