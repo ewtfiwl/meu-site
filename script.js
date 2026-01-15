@@ -1,37 +1,53 @@
-// Seleciona todos os elementos animados
-const elementos = document.querySelectorAll(".scroll-animado");
+// =========================
+// SCROLL ANIMATIONS
+// =========================
 
-// WeakMap para controlar cooldown e evitar repetição rápida
-const lastAnimated = new WeakMap();
-const COOLDOWN = 300; // 0.3s entre animações
-
-// Função para animar o elemento
-function toggleAtivo(entry) {
-  const now = Date.now();
-  const last = lastAnimated.get(entry.target) || 0;
-
-  if (now - last <= COOLDOWN) return; // ainda no cooldown
-
-  if (entry.isIntersecting) {
-    entry.target.style.transitionDelay = "0s"; // remove delay extra
-    entry.target.classList.add("ativo");
-  } else {
-    entry.target.classList.remove("ativo");
-  }
-
-  lastAnimated.set(entry.target, now);
-}
-
-// Configura o observer
-const observer = new IntersectionObserver(
-  (entries) => entries.forEach(toggleAtivo),
-  { threshold: 0.1 }
+// Elementos gerais (seções menores)
+const elementos = document.querySelectorAll(
+  ".scroll-animado:not(.projeto-card)"
 );
 
-// Observa cada elemento
-elementos.forEach((el) => observer.observe(el));
+// Cards de projeto (elementos altos)
+const projetos = document.querySelectorAll(".projeto-card");
 
-// Animação inicial do Hero e da foto
+// Observer geral: anima entrada e saída suave
+// Usa thresholds diferentes para evitar oscilações em scroll lento
+const observerGeral = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.intersectionRatio > 0.3) {
+        entry.target.classList.add("ativo");
+      } else if (entry.intersectionRatio < 0.05) {
+        entry.target.classList.remove("ativo");
+      }
+    });
+  },
+  {
+    threshold: [0, 0.05, 0.3],
+  }
+);
+
+// Observer específico para projetos
+// Anima apenas uma vez para evitar delay e bugs com scrollbar
+const observerProjetos = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("ativo");
+        observerProjetos.unobserve(entry.target);
+      }
+    });
+  },
+  {
+    threshold: 0.15,
+  }
+);
+
+projetos.forEach((card) => observerProjetos.observe(card));
+
+elementos.forEach((el) => observerGeral.observe(el));
+
+// Animação inicial do Hero e da foto (executa no load)
 document
   .querySelectorAll(".hero .conteudo, .foto")
   .forEach((el) => el.classList.add("ativo"));
