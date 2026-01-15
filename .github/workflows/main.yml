@@ -6,26 +6,25 @@ on:
       - main
 
 jobs:
-  lighthouse:
+  pages-deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-
-      - name: Install Node.js
+      - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: "20"
-
-      - name: Install Lighthouse CI
-        run: npm install -g @lhci/cli@0.10.x
-
-      - name: Run Lighthouse
-        run: lhci autorun --url=https://ewtfiwl.github.io/meu-site/ --upload.target=filesystem --upload.outputDir=./lhci-results
-
-      - name: Generate Badges
+      - name: Install dependencies
+        run: npm install -g @lhci/cli@0.10.x @lhci/badges
+      - name: Wait for GitHub Pages
         run: |
-          npx lhci-badges ./lhci-results --output ./badges
-
+          echo "Esperando 15 segundos para o GitHub Pages atualizar..."
+          sleep 15
+      - name: Run Lighthouse CI
+        run: |
+          lhci autorun --url=https://ewtfiwl.github.io/meu-site/ --upload.target=filesystem --upload.outputDir=./lhci-results
+      - name: Generate badges
+        run: npx lhci-badges ./lhci-results --output ./badges
       - name: Commit badges
         run: |
           git config --global user.name "github-actions[bot]"
