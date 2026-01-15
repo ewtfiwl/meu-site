@@ -7,7 +7,7 @@
 ![Lighthouse: Performance](badges/performance.svg)
 ![Lighthouse: Accessibility](badges/accessibility.svg)
 ![Lighthouse: Best Practices](badges/best-practices.svg)
-![Lighthouse: SEO](badges/seo.svg)    
+![Lighthouse: SEO](badges/seo.svg)
 
 Este é meu **site pessoal e portfólio online**, criado para apresentar quem sou, minhas habilidades e projetos desenvolvidos em **Front-End**, tanto para estudos quanto para demonstração de trabalho profissional.
 
