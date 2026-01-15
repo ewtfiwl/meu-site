@@ -1,6 +1,9 @@
 name: Lighthouse CI
 
 on:
+  push:
+    branches:
+      - main
   workflow_dispatch:
 
 jobs:
@@ -16,14 +19,18 @@ jobs:
           node-version: "20"
 
       - name: Install Lighthouse CI
-        run: npm install -g @lhci/cli@0.10.x @lhci/badges
+        run: npm install -g @lhci/cli@0.10.x
+
+      - name: Wait for site online
+        run: sleep 20
 
       - name: Run Lighthouse CI
         run: |
-          lhci autorun \
-            --url=https://ewtfiwl.github.io/meu-site/ \
-            --upload.target=filesystem \
-            --upload.outputDir=./lhci-results
-
-      - name: Generate badges
-        run: npx l
+          lhci autorun --url=https://ewtfiwl.github.io/meu-site/ --upload.target=filesystem --upload.outputDir=./lhci-results
+      - name: Generate badges (simple)
+        run: |
+          mkdir -p badges
+          echo '<svg xmlns="http://www.w3.org/2000/svg" width="150" height="20"><text x="0" y="15" font-size="14">Performance: 0%</text></svg>' > badges/performance.svg
+          echo '<svg xmlns="http://www.w3.org/2000/svg" width="150" height="20"><text x="0" y="15" font-size="14">Accessibility: 0%</text></svg>' > badges/accessibility.svg
+          echo '<svg xmlns="http://www.w3.org/2000/svg" width="150" height="20"><text x="0" y="15" font-size="14">Best Practices: 0%</text></svg>' > badges/best-practices.svg
+          echo '<sv
