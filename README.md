@@ -1,8 +1,8 @@
 # 🌐 Site Pessoal — Enzo Lemos | Portfólio Front-End
 
-Este é meu site pessoal, criado para apresentar quem eu sou, minhas habilidades e alguns projetos que desenvolvi durante meus estudos em **Front-End**.
+Este é meu **site pessoal e portfólio online**, criado para apresentar quem sou, minhas habilidades e projetos desenvolvidos em **Front-End**, tanto para estudos quanto para demonstração de trabalho profissional.
 
-O objetivo do projeto é praticar **HTML semântico**, **CSS moderno**, **JavaScript básico** e organização de código, além de servir como base para meu portfólio online.
+O objetivo do projeto é praticar **HTML semântico**, **CSS moderno**, **JavaScript básico**, acessibilidade e boas práticas, além de servir como base para meu portfólio online.
 
 ---
 
@@ -11,6 +11,8 @@ O objetivo do projeto é praticar **HTML semântico**, **CSS moderno**, **JavaSc
 - **HTML5** — Estrutura semântica, headings, sections, links, imagens
 - **CSS3** — Box Model, Flexbox, Grid, responsividade, transições e animações
 - **JavaScript** — Intersection Observer para animações de scroll
+- **Design Responsivo** — Layout adaptável a diferentes tamanhos de tela (mobile-first)
+- **Acessibilidade (A11y)** — Foco visível, navegação por teclado, uso de roles e labels
 - **Git & GitHub** — Controle de versão e publicação
 - **GitHub Pages** — Hospedagem gratuita do site
 
@@ -20,7 +22,7 @@ O objetivo do projeto é praticar **HTML semântico**, **CSS moderno**, **JavaSc
 
 - **Landing Page / Hero** — Apresentação com foto, nome e descrição
 - **Sobre mim** — Breve descrição sobre minha trajetória e interesses
-- **Habilidades** — Lista de conhecimentos em Front-End
+- **Habilidades** — Demonstração prática dos meus conhecimentos em Front-End
 - **Projetos** — Cards com imagens, títulos, descrição e links para projetos reais
 - **Contato** — Links para email, LinkedIn e GitHub
 
@@ -28,23 +30,27 @@ O objetivo do projeto é praticar **HTML semântico**, **CSS moderno**, **JavaSc
 
 ## 📌 Projetos em destaque
 
-- **Bikcraft** — Landing page institucional de uma loja de bicicletas artesanais, construída em HTML e CSS. Prática de layout em Grid, responsividade, estilização de menus, cards e botões.  
+- **Bikcraft** — Landing page institucional de uma loja de bicicletas artesanais  
+  Tecnologias: HTML, CSS Grid, Flexbox, responsividade  
   [Ver site](https://ewtfiwl.github.io/Bikcraft/) | [Ver código no GitHub](https://github.com/ewtfiwl/Bikcraft)
 
-- **Site Pessoal** — Meu portfólio, criado para praticar estruturação, organização visual e publicação com GitHub Pages.  
+- **Site Pessoal** — Meu portfólio, criado para praticar estruturação, organização visual, acessibilidade e publicação com GitHub Pages  
+  Tecnologias: HTML semântico, CSS moderno, JS para animações de scroll  
   [Ver site](https://ewtfiwl.github.io/meu-site/) | [Ver código no GitHub](https://github.com/ewtfiwl/meu-site/)
 
 ---
 
 ## 🖥️ Funcionalidades implementadas
 
-- Animação de entrada de elementos ao scroll (fade + slide)
+- Animação de entrada de elementos ao scroll (fade + slide) com Intersection Observer
 - Hover effects com glow nas imagens dos projetos
-- Responsividade para mobile, incluindo ajustes de padding, fonte e tamanho de imagens
+- Responsividade para mobile, incluindo ajustes de padding, fontes e imagens
 - Alternância de cores suaves entre cards de projetos
 - Selo fixo no canto inferior direito com meu nome
 - Uso de pseudo-elementos (`::before`) para overlay na landing page
-- Implementação de favicon responsivo (SVG e PNG) para compatibilidade entre navegadores e dispositivos Apple
+- Implementação de favicon responsivo (SVG e PNG) para compatibilidade cross-browser
+- Foco visível em elementos interativos e navegação acessível por teclado
+- Performance otimizada: animações leves e carregamento rápido de imagens
 
 ---
 
@@ -52,8 +58,8 @@ O objetivo do projeto é praticar **HTML semântico**, **CSS moderno**, **JavaSc
 
 - Estruturação de páginas com HTML semântico
 - Organização de CSS escalável e reutilizável
-- Uso prático de animações e transições sem prejudicar performance
-- Aplicação de JavaScript para melhorar experiência do usuário
+- Aplicação prática de animações e transições sem prejudicar performance
+- Boas práticas de acessibilidade e UX
 - Publicação e versionamento de projetos com GitHub Pages
 
 ---
@@ -64,6 +70,16 @@ O objetivo do projeto é praticar **HTML semântico**, **CSS moderno**, **JavaSc
 - Incrementar interatividade com JavaScript (modais de projetos, filtros, etc.)
 - Melhorar otimização e performance (preload de imagens, lazy loading)
 - Explorar efeitos avançados de CSS e animações
+- Implementar melhorias de SEO (meta tags, titles, descriptions)
+- Continuar aprimorando acessibilidade e experiência do usuário
+
+---
+
+## 📫 Contato
+
+- Email: enzo.lemos05@gmail.com
+- LinkedIn: [linkedin.com/in/enzolemos](https://www.linkedin.com/in/enzo-lemos/)
+- GitHub: [github.com/ewtfiwl](https://github.com/ewtfiwl)
 
 ---
 
