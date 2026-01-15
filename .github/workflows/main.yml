@@ -1,0 +1,35 @@
+name: Lighthouse CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  lighthouse:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+
+      - name: Install Lighthouse CI
+        run: npm install -g @lhci/cli@0.10.x
+
+      - name: Run Lighthouse
+        run: lhci autorun --url=https://ewtfiwl.github.io/meu-site/ --upload.target=filesystem --upload.outputDir=./lhci-results
+
+      - name: Generate Badges
+        run: |
+          npx lhci-badges ./lhci-results --output ./badges
+
+      - name: Commit badges
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add badges/
+          git commit -m "chore: update Lighthouse badges" || echo "No changes to commit"
+          git push
