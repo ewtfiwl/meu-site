@@ -19,10 +19,14 @@ jobs:
       - name: Install Lighthouse CI
         run: npm install -g @lhci/cli@0.10.x @lhci/badges
 
-      - name: Wait for site online
+      - name: Wait until site is online
         run: |
           echo "Esperando GitHub Pages publicar o site..."
-          sleep 20  # Espera 20 segundos para garantir que o site esteja online
+          while ! curl -s https://ewtfiwl.github.io/meu-site/ > /dev/null; do
+            echo "Site ainda não disponível, esperando 5s..."
+            sleep 5
+          done
+          echo "Site online! Rodando Lighthouse..."
 
       - name: Run Lighthouse CI
         run: lhci autorun --url=https://ewtfiwl.github.io/meu-site/ --upload.target=filesystem --upload.outputDir=./lhci-results
