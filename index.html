@@ -14,70 +14,72 @@
 </head>
 
 <body>
+  <header class="hero">
+    <div class="conteudo">
+      <img src="img/enzo1.jpg" alt="Foto de Enzo Lemos" class="foto">
+      <h1>Oi, eu sou o Enzo!👋</h1>
+      <p class="subtitulo">Desenvolvedor
+        <span class="destaque">Front-End</span> júnior, focado em HTML, CSS e JavaScript. Curioso por design, código limpo e boas práticas.
+      </p>
+    </div>
+  </header>
+
   <main>
-    <section class="hero">
-      <div class="conteudo">
-        <img src="img/enzo1.jpg" alt="Foto de Enzo Lemos" class="foto">
-        <h1>Oi, eu sou o Enzo!👋</h1>
-        <p class="subtitulo">Desenvolvedor
-          <span class="destaque">Front-End</span> júnior, focado em HTML, CSS e JavaScript. Curioso por design, código limpo e boas práticas.
-        </p>
-      </div>
+
+    <section class="sobre scroll-animado" aria-labelledby="sobre-title">
+      <h2 id="sobre-title">Sobre mim</h2>
+      <p> Sou estudante de Front-End, atualmente focado em construir uma base sólida em HTML, CSS e <span class="destaque">JavaScript.</span> Gosto de entender como as coisas funcionam por baixo dos panos e estou sempre praticando com pequenos projetos. Busco minha primeira oportunidade como desenvolvedor júnior para aplicar boas práticas, aprender em ambiente real e evoluir profissionalmente. </p>
     </section>
+
+    <section class="habilidades scroll-animado" aria-labelledby="habilidades-title">
+      <h2 id="habilidades-title">Habilidades</h2>
+      <ul>
+        <li>HTML5 semântico</li>
+        <li>CSS3 (Box Model, Flexbox, Layout)</li>
+        <li>Git e GitHub</li>
+        <li>Noções de JavaScript</li>
+      </ul>
+    </section>
+
+    <section id="projetos" aria-labelledby="projetos-title">
+      <h2 id="projetos-title">Projetos</h2>
+      <article class="projeto-card scroll-animado">
+
+        <div class="projeto-preview">
+          <img src="img/print-projeto-bikcraft.png" alt="Screenshot do projeto Bikcraft">
+        </div>
+
+        <h3 class="titulo-projeto">Bikcraft</h3>
+        <p> Landing page institucional de uma loja de bicicletas artesanais, construída inteiramente em HTML e CSS. Prática de layout em grid, responsividade, estilização de menus, cards e botões, com foco em apresentação visual clara e organizada. </p>
+        <a href="https://ewtfiwl.github.io/Bikcraft/" target="_blank" rel="noopener noreferrer" aria-label="Ver site do projeto Bikcraft">
+          Ver Site
+        </a>
+      </article>
+
+      <article class="projeto-card scroll-animado">
+        <h3 class="titulo-projeto">Site Pessoal</h3>
+        <p> Site de apresentação pessoal criado para praticar estruturação, organização visual e publicação com GitHub Pages. </p> <a href="https://github.com/ewtfiwl/meu-site/" target="_blank" rel="noopener noreferrer"> Ver código no GitHub </a>
+      </article>
+    </section>
+
+    <section class="contato scroll-animado from-bottom" aria-labelledby="contato-title">
+      <h2 id="contato-title">Contato</h2>
+      <p class="contato-texto">
+        Quer conversar, trocar ideia ou ver mais do meu trabalho?
+      </p>
+
+      <nav class="contato-links" aria-label="Links de contato">
+        <a href="https://mail.google.com/mail/?view=cm&to=enzo.lemos05@gmail.com" target="_blank">📩 Email</a>
+        <a href="https://www.linkedin.com/in/enzo-lemos/" target="_blank">💼 LinkedIn</a>
+        <a href="https://github.com/ewtfiwl" target="_blank">🐙 GitHub</a>
+      </nav>
+    </section>
+
   </main>
 
-  <section class="sobre scroll-animado">
-    <h2>Sobre mim</h2>
-    <p> Sou estudante de Front-End, atualmente focado em construir uma base sólida em HTML, CSS e <span class="destaque">JavaScript.</span> Gosto de entender como as coisas funcionam por baixo dos panos e estou sempre praticando com pequenos projetos. Busco minha primeira oportunidade como desenvolvedor júnior para aplicar boas práticas, aprender em ambiente real e evoluir profissionalmente. </p>
-  </section>
-
-  <section class="habilidades scroll-animado">
-    <h2>Habilidades</h2>
-    <ul>
-      <li>HTML5 semântico</li>
-      <li>CSS3 (Box Model, Flexbox, Layout)</li>
-      <li>Git e GitHub</li>
-      <li>Noções de JavaScript</li>
-    </ul>
-  </section>
-
-  <section id="projetos">
-    <h2>Projetos</h2>
-    <article class="projeto-card scroll-animado">
-
-      <div class="projeto-preview">
-        <img src="img/print-projeto-bikcraft.png" alt="Screenshot do projeto Bikcraft">
-      </div>
-
-      <h3><span class="titulo-projeto">Bikcraft</span></h3>
-      <p> Landing page institucional de uma loja de bicicletas artesanais, construída inteiramente em HTML e CSS. Prática de layout em grid, responsividade, estilização de menus, cards e botões, com foco em apresentação visual clara e organizada. </p>
-      <a href="https://ewtfiwl.github.io/Bikcraft/" target="_blank" rel="noopener noreferrer">
-        Ver Site
-      </a>
-    </article>
-
-
-    <article class="projeto-card scroll-animado">
-      <h3><span class="titulo-projeto">Site Pessoal</span></h3>
-      <p> Site de apresentação pessoal criado para praticar estruturação, organização visual e publicação com GitHub Pages. </p> <a href="https://github.com/ewtfiwl/meu-site/" target="_blank" rel="noopener noreferrer"> Ver código no GitHub </a>
-    </article>
-  </section>
-
-  <section class="contato scroll-animado from-bottom">
-    <h2>Contato</h2>
-    <p class="contato-texto">
-      Quer conversar, trocar ideia ou ver mais do meu trabalho?
-    </p>
-
-    <div class="contato-links">
-      <a href="https://mail.google.com/mail/?view=cm&to=enzo.lemos05@gmail.com" target="_blank">📩 Email</a>
-      <a href="https://www.linkedin.com/in/enzo-lemos/" target="_blank">💼 LinkedIn</a>
-      <a href="https://github.com/ewtfiwl" target="_blank">🐙 GitHub</a>
-    </div>
-  </section>
-  <div class="logo-selo">
+  <footer class="logo-selo">
     <span>© Enzo Lemos</span>
-  </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>
