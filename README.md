@@ -5,11 +5,7 @@
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-181717?style=flat-square&logo=github&logoColor=white)](https://pages.github.com/)
 
----
-
 Este é meu **site pessoal e portfólio online**, criado para apresentar quem sou, minhas habilidades e projetos desenvolvidos em **Front-End**, tanto para estudos quanto para demonstração de trabalho profissional.
-
-O objetivo do projeto é praticar **HTML semântico**, **CSS moderno**, **JavaScript básico**, acessibilidade e boas práticas, além de servir como base para meu portfólio online.
 
 ---
 
