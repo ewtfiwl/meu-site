@@ -4,10 +4,10 @@
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-181717?style=flat-square&logo=github&logoColor=white)](https://pages.github.com/)
-![Performance](https://img.shields.io/badge/Performance-75%25-brightgreen)
-![Accessibility](https://img.shields.io/badge/Accessibility-100%25-brightgreen)
-![Best Practices](https://img.shields.io/badge/Best%20Practices-100%25-brightgreen)
-![SEO](https://img.shields.io/badge/SEO-91%25-brightgreen)
+![Lighthouse Performance](https://img.shields.io/badge/Lighthouse_Performance-89%25-brightgreen)
+![Lighthouse Accessibility](https://img.shields.io/badge/Lighthouse_Accessibility-100%25-brightgreen)
+![Lighthouse Best Practices](https://img.shields.io/badge/Lighthouse_Best_Practices-100%25-brightgreen)
+![Lighthouse SEO](https://img.shields.io/badge/Lighthouse_SEO-91%25-brightgreen)
 
 Este é meu **site pessoal e portfólio online**, criado para apresentar quem sou, minhas habilidades e projetos desenvolvidos em **Front-End**, tanto para estudos quanto para demonstração de trabalho profissional.
 
@@ -61,22 +61,44 @@ Este é meu **site pessoal e portfólio online**, criado para apresentar quem so
 
 ---
 
+## ⚡ Qualidade, performance & acessibilidade
+
+O projeto foi refinado com foco em **experiência do usuário**, **performance real** e **boas práticas modernas de Front-End**:
+
+- Uso consciente de animações com `transform` e `opacity`
+- Aplicação estratégica de `will-change` apenas onde faz sentido
+- Animações desativadas em mobile para preservar performance
+- Lazy loading de imagens (`loading="lazy"`)
+- Estrutura semântica com landmarks (`header`, `main`, `section`, `nav`, `footer`)
+- Uso de `aria-label`, `aria-labelledby` e foco visível (`:focus-visible`)
+- Tipografia moderna com **Inter**, mantendo fallbacks seguros
+- Testes com Google Lighthouse (Desktop e Mobile)
+
+📊 **Resultados Lighthouse**:
+
+- Desktop: 89 Performance | 100 Accessibility | 100 Best Practices | 91 SEO
+- Mobile: 75 Performance | 100 Accessibility | 100 Best Practices | 91 SEO
+
+---
+
 ## 📘 Principais aprendizados
 
-- Estruturação de páginas com HTML semântico
-- Organização de CSS escalável e reutilizável
-- Aplicação prática de animações e transições sem prejudicar performance
-- Boas práticas de acessibilidade e UX
-- Publicação e versionamento de projetos com GitHub Pages
+- Estruturação de páginas com HTML semântico e acessível
+- Organização de CSS escalável usando variáveis e padrões reutilizáveis
+- Criação de animações suaves focadas em performance
+- Uso prático de Intersection Observer
+- Hierarquia tipográfica e micro-ajustes visuais de UX
+- Boas práticas de acessibilidade (A11y) aplicadas na prática
+- Deploy, versionamento e manutenção contínua com GitHub Pages
 
 ---
 
 ## 🚀 Próximos passos
 
 - Adicionar mais projetos ao portfólio
-- Incrementar interatividade com JavaScript (modais de projetos, filtros, etc.)
+- Incrementar interatividade com JavaScript (modais, filtros, componentes reutilizáveis)
 - Melhorar otimização e performance (preload de imagens, lazy loading)
-- Explorar efeitos avançados de CSS e animações
+- Explorar padrões de componentização e organização de JS
 - Implementar melhorias de SEO (meta tags, titles, descriptions)
 - Continuar aprimorando acessibilidade e experiência do usuário
 
