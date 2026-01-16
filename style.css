@@ -24,7 +24,12 @@ body {
   margin: 0;
   background-color: var(--bg-page);
   color: var(--text-main);
-  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
 }
 /* Hierarquia tipográfica */
 /* Títulos */
@@ -51,6 +56,7 @@ strong {
 }
 
 html {
+  font-size: 16px;
   scroll-behavior: smooth;
 }
 
@@ -102,7 +108,9 @@ html {
 .scroll-animado {
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 0.35s ease-out, transform 0.35s ease-out;
+  transition:
+    opacity 0.35s ease-out,
+    transform 0.35s ease-out;
 }
 
 .scroll-animado.ativo {
@@ -151,7 +159,7 @@ html {
   position: relative;
   z-index: 1;
   background: rgba(20, 20, 20, 0.9);
-  padding: 40px 30px;
+  padding: 2.5rem 1.875rem;
   border-radius: 16px;
   backdrop-filter: blur(4px);
   text-align: center;
@@ -160,9 +168,9 @@ html {
 
 section:not(.hero) {
   background: var(--bg-section);
-  padding: 20px;
+  padding: 1.25rem;
   border-radius: 12px;
-  margin: 25px auto;
+  margin: 1.5rem auto;
   max-width: 600px;
 }
 
@@ -174,19 +182,19 @@ section:not(.hero) {
 
 h1 {
   color: var(--text-white);
-  font-size: 32px;
+  font-size: 2rem;
   margin-bottom: 10px;
 }
 
 .subtitulo {
-  font-size: 16px;
+  font-size: 1rem;
   margin-bottom: 20px;
   color: #fff;
 }
 
 h2 {
   margin-bottom: 15px;
-  font-size: 22px;
+  font-size: 1.375rem;
   color: var(--green-main);
 }
 
@@ -237,7 +245,8 @@ h2 {
   background: linear-gradient(180deg, var(--green-main), var(--green-soft));
   border-radius: 50%;
   box-shadow: 0 0 6px var(--green-glow);
-  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+  transition:
+    transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
     box-shadow 0.35s ease;
 }
 
@@ -295,7 +304,8 @@ h3::after {
   color: var(--green-main);
   text-decoration: none;
   font-weight: bold;
-  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
+  transition:
+    transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
     box-shadow 0.35s ease;
 }
 
@@ -310,23 +320,31 @@ h3::after {
   margin-bottom: 0;
   border: none;
   box-shadow: 0 0 14px rgba(0, 255, 204, 0.18);
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  transition:
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
 }
 
 /* Sombrinha ao tocar no mobile */
 .projeto-card img:active {
-  box-shadow: 0 0 25px rgba(0, 255, 204, 0.45), 0 0 50px rgba(0, 255, 204, 0.15);
+  box-shadow:
+    0 0 25px rgba(0, 255, 204, 0.45),
+    0 0 50px rgba(0, 255, 204, 0.15);
   transition: transform 0.2s ease;
   transform: translateY(-4px);
 }
 
 .projeto-card img.ativo {
-  box-shadow: 0 0 25px rgba(0, 255, 204, 0.45), 0 0 50px rgba(0, 255, 204, 0.15);
+  box-shadow:
+    0 0 25px rgba(0, 255, 204, 0.45),
+    0 0 50px rgba(0, 255, 204, 0.15);
   transform: translateY(-4px);
 }
 
 .projeto-card:hover {
-  box-shadow: 0 0 18px rgba(0, 255, 204, 0.25), 0 0 32px rgba(0, 255, 204, 0.1);
+  box-shadow:
+    0 0 18px rgba(0, 255, 204, 0.25),
+    0 0 32px rgba(0, 255, 204, 0.1);
   transform: translateY(-4px);
 }
 
@@ -364,8 +382,8 @@ h3::after {
 .titulo-projeto {
   color: #fff;
 }
-/* ACESSIBILIDADE — FOCUS */
 
+/* ACESSIBILIDADE — FOCUS */
 :focus-visible {
   outline: none;
   box-shadow: 0 0 0 3px rgba(0, 255, 204, 0.6);
@@ -377,7 +395,9 @@ a:focus-visible {
 }
 
 .contato-links a:focus-visible {
-  box-shadow: 0 0 0 3px rgba(0, 255, 204, 0.7), 0 0 15px rgba(0, 255, 204, 0.25);
+  box-shadow:
+    0 0 0 3px rgba(0, 255, 204, 0.7),
+    0 0 15px rgba(0, 255, 204, 0.25);
 }
 
 .projeto-card a:focus-visible {
@@ -419,7 +439,8 @@ a:focus-visible {
 /* HOVER (dispositivos com hover) */
 @media (hover: hover) {
   .projeto-card img:hover {
-    box-shadow: 0 0 25px rgba(0, 255, 204, 0.45),
+    box-shadow:
+      0 0 25px rgba(0, 255, 204, 0.45),
       0 0 50px rgba(0, 255, 204, 0.15);
     transform: translateY(-4px);
   }
