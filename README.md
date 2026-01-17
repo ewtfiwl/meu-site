@@ -4,7 +4,7 @@
 [![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 [![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-181717?style=flat-square&logo=github&logoColor=white)](https://pages.github.com/)
-![Lighthouse Performance](https://img.shields.io/badge/Lighthouse_Performance-95%25-brightgreen)
+![Lighthouse Performance](https://img.shields.io/badge/Lighthouse_Performance-94%25-brightgreen)
 ![Lighthouse Accessibility](https://img.shields.io/badge/Lighthouse_Accessibility-100%25-brightgreen)
 ![Lighthouse Best Practices](https://img.shields.io/badge/Lighthouse_Best_Practices-100%25-brightgreen)
 ![Lighthouse SEO](https://img.shields.io/badge/Lighthouse_SEO-91%25-brightgreen)
