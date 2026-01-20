@@ -1,17 +1,24 @@
 :root {
+  /* PALETA BASE */
+  --green-500: #2ad5c4;
+  --green-300: #77e4d9;
+
   /* CORES PRINCIPAIS */
-  --green-main: #00ffcc;
-  --green-soft: #00bfa6;
+  --green-main: var(--green-500);
+  --green-soft: var(--green-300);
+
+  /* ACCENT */
+  --accent-main: #00ffcc;
 
   /* EFEITOS */
-  --green-glow: rgba(0, 255, 204, 0.35);
-  --green-glow-strong: rgba(0, 255, 204, 0.6);
+  --green-glow: rgba(42, 213, 196, 0.45);
+  --green-glow-strong: rgba(42, 213, 196, 0.75);
 
   /* BACKGROUNDS */
   --bg-page: #0b0b0b;
   --bg-section: #161616;
   --bg-card: #1c1c1c;
-  --bg-card-alt: #202020; /* apenas para alternância */
+  --bg-card-alt: #202020;
 
   /* TEXTOS */
   --text-main: #b2b2b2;
@@ -189,7 +196,7 @@ h1 {
 .subtitulo {
   font-size: 1rem;
   margin-bottom: 20px;
-  color: #fff;
+  color: var(--text-white);
 }
 
 h2 {
@@ -208,7 +215,7 @@ h2 {
 .projeto-card a {
   display: inline-block;
   margin-top: 10px;
-  color: #00ffcc;
+  color: var(--accent-main);
   text-decoration: none;
   font-weight: bold;
 }
@@ -230,7 +237,7 @@ h2 {
 
 .habilidades li {
   margin: 8px 0;
-  color: #b2b2b2;
+  color: var(--text-main);
   display: flex;
   align-items: center;
   gap: 12px;
@@ -287,7 +294,7 @@ h3::after {
 
 .contato-texto {
   margin-bottom: 20px;
-  color: #b2b2b2;
+  color: var(--text-main);
 }
 
 .contato-links {
@@ -300,7 +307,7 @@ h3::after {
 .contato-links a {
   padding: 10px 18px;
   border-radius: 999px;
-  background: #1c1c1c;
+  background: var(--bg-card);
   color: var(--green-main);
   text-decoration: none;
   font-weight: bold;
@@ -319,7 +326,7 @@ h3::after {
   border-radius: 8px;
   margin-bottom: 0;
   border: none;
-  box-shadow: 0 0 14px rgba(0, 255, 204, 0.18);
+  box-shadow: 0 0 14px var(--green-glow);
   transition:
     box-shadow 0.3s ease,
     transform 0.3s ease;
@@ -328,23 +335,22 @@ h3::after {
 /* Sombrinha ao tocar no mobile */
 .projeto-card img:active {
   box-shadow:
-    0 0 25px rgba(0, 255, 204, 0.45),
-    0 0 50px rgba(0, 255, 204, 0.15);
+    0 0 25px var(--green-glow-strong),
+    0 0 50px var(--green-glow);
   transition: transform 0.2s ease;
   transform: translateY(-4px);
 }
-
 .projeto-card img.ativo {
   box-shadow:
-    0 0 25px rgba(0, 255, 204, 0.45),
-    0 0 50px rgba(0, 255, 204, 0.15);
+    0 0 25px var(--green-glow-strong),
+    0 0 50px var(--green-glow);
   transform: translateY(-4px);
 }
 
 .projeto-card:hover {
   box-shadow:
-    0 0 18px rgba(0, 255, 204, 0.25),
-    0 0 32px rgba(0, 255, 204, 0.1);
+    0 0 18px var(--green-glow),
+    0 0 32px var(--green-glow);
   transform: translateY(-4px);
 }
 
@@ -367,7 +373,7 @@ h3::after {
 
 .projeto-preview.vazio {
   height: 200px;
-  background: linear-gradient(135deg, #1c1c1c, #202020);
+  background: linear-gradient(135deg, var(--bg-card), var(--bg-card-alt));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -386,7 +392,7 @@ h3::after {
 /* ACESSIBILIDADE — FOCUS */
 :focus-visible {
   outline: none;
-  box-shadow: 0 0 0 3px rgba(0, 255, 204, 0.6);
+  box-shadow: 0 0 0 3px var(--green-glow-strong);
   border-radius: 8px;
 }
 
@@ -396,12 +402,12 @@ a:focus-visible {
 
 .contato-links a:focus-visible {
   box-shadow:
-    0 0 0 3px rgba(0, 255, 204, 0.7),
-    0 0 15px rgba(0, 255, 204, 0.25);
+    0 0 0 3px var(--green-glow-strong),
+    0 0 15px var(--green-glow);
 }
 
 .projeto-card a:focus-visible {
-  box-shadow: 0 0 0 3px rgba(0, 255, 204, 0.6);
+  box-shadow: 0 0 0 3px var(--green-glow-strong);
 }
 
 /* RESPONSIVIDADE MOBILE */
@@ -436,12 +442,11 @@ a:focus-visible {
   }
 }
 
-/* HOVER (dispositivos com hover) */
 @media (hover: hover) {
   .projeto-card img:hover {
     box-shadow:
-      0 0 25px rgba(0, 255, 204, 0.45),
-      0 0 50px rgba(0, 255, 204, 0.15);
+      0 0 25px var(--green-glow-strong),
+      0 0 50px var(--green-glow);
     transform: translateY(-4px);
   }
 
@@ -450,8 +455,8 @@ a:focus-visible {
     position: fixed;
     bottom: 10px;
     right: 10px;
-    background: rgba(0, 255, 204, 0.15);
-    color: #00ffcc;
+    background: var(--green-glow);
+    color: var(--accent-main);
     padding: 5px 10px;
     border-radius: 8px;
     font-size: 14px;
