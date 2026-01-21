@@ -369,6 +369,12 @@ h3::after {
 
 .projeto-preview img {
   display: block;
+  width: 100%;
+  height: auto;
+}
+.projeto-card,
+.projeto-card img {
+  will-change: transform;
 }
 
 .projeto-preview.vazio {
@@ -415,11 +421,15 @@ a:focus-visible {
   body {
     padding: 15px;
   }
+  .hero {
+    min-height: 100vh;
+    min-height: 100svh;
+  }
   .conteudo {
     padding: 20px 15px;
   }
   h1 {
-    font-size: 26px;
+    font-size: clamp(1.6rem, 5vw, 2rem);
     letter-spacing: -0.02em;
   }
 
@@ -433,7 +443,9 @@ a:focus-visible {
   .projeto-card {
     text-align: center;
   }
-
+  .projeto-card p {
+    max-width: 100%;
+  }
   .scroll-animado {
     will-change: auto;
     transition: none;
